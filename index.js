@@ -1,3 +1,8 @@
+import _ from 'lodash'
+let result = ''
 for (let index = 0; index < 15; index++) {
-    Math.round(Math.random() * 100)    
+    result += '-' + Math.round(Math.random() * 100)
+
 }
+console.log(result.slice(1))  
+console.log(_.last(['one', 'two']));
